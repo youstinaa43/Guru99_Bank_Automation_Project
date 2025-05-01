@@ -12,7 +12,7 @@ public class BaseTests {
     @BeforeClass
     public void setUp(){
         browserActions = new BrowserActions(null); // Temporary null
-        driver = browserActions.setBrowserDriver(BrowserActions.Browser.CHROME);
+        driver = browserActions.setBrowserDriver(BrowserActions.Browser.FIREFOX);
         browserActions = new BrowserActions(driver);
         loginPage = new LoginPage(driver);
         browserActions.openUrl(Util.baseUrl);
